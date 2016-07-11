@@ -1,0 +1,307 @@
+<!doctype html>
+<html ng-app="udsgulp" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header my-header=""><div class="top">
+    <div class="container">
+        <div class="call-block">
+            Call Toll Free <a href="callto:+18664562456"><img src="img/call-icn.png" width="17" height="17" alt="">1-866-456-2456</a>
+        </div>
+        <div class="free-shipping">
+            <b>free shipping</b> on all orders over $100
+        </div>
+        <div class="user-btns">
+            <a href="#"><img src="img/login-icn.png" alt="">Sign in</a>
+            <a href="#"><img src="img/reg-icn.png" alt="">Register</a>
+        </div>
+        <div class="mobile-top-nav">
+            <a href="#" class="login-btn"></a>
+            <a href="#" class="cart-btn"></a>
+            <a href="#" class="nav-btn"></a>
+        </div>
+    </div>
+</div>
+<ul class="login-nav">
+    <li><a href="#">Sign In</a></li>
+    <li><a href="#">Register</a></li>
+</ul>
+
+<div class="container">
+    <a href="#/" class="logo"><img class="img-responsive" src="img/logo.png" alt=""></a>
+    <form method="get" action="" class="header-search ng-pristine ng-valid">
+        <input type="search" name="q" ng-model="search" placeholder="Find Your Medications (eg. Plavix, Viagra, Lipitor, etc.)" class="ng-pristine ng-untouched ng-valid" aria-invalid="false">
+        <button type="submit"></button>
+    </form>
+    <a href="#" class="header-cart ng-scope ng-binding" ng-controller="headerCartCtrl">
+        <span>shopping cart</span>
+        533 items- <b class="ng-binding">$1139 USD</b>
+    </a>
+</div>
+<nav class="header-nav">
+    <div class="container">
+        <a href="#/" class="active">Home</a>
+        <a href="/#orderonline">Place a new order</a>
+        <a href="#">Refill order</a>
+        <a href="#">How to order</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact us</a>
+    </div>
+</nav>
+</header>
+<main ui-view="" class="ng-scope"><div class="container product-page ng-scope">
+<h1><span class="ng-binding">Plavix (Clopidogrel)</span> and/or equivalents</h1>
+<!-- ngRepeat: product in product --><div class="row ng-scope" ng-repeat="product in product">
+    <div class="col-md-6">
+        <!-- ngIf: product.brandName.length > 2 --><div class="product ng-scope" ng-if="product.brandName.length > 2">
+            <div class="category ng-binding">BRAND NAME Plavix</div>
+            <div class="product-name ng-binding">Plavix 75mg</div>
+            <div class="manufactured ng-binding">Manufactured by Sanofi</div>
+            <div class="country ng-binding">Product of United Kingdom</div>
+            <div class="prescription"><img src="img/rx.png" alt=""> Prescription Required</div>
+            <div class="table">
+                <div class="tr">
+                    <div class="td"></div>
+                    <div class="td">quantity</div>
+                    <div class="td">price</div>
+                    <div class="td"></div>
+                </div>
+                <!-- ngRepeat: option in product.brandOptions --><div class="tr ng-scope" ng-repeat="option in product.brandOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">28 tablets</b></div>
+                    <div class="td ng-binding">$79.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.brandOptions --><div class="tr ng-scope" ng-repeat="option in product.brandOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">56 tablets</b></div>
+                    <div class="td ng-binding">$142.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.brandOptions --><div class="tr ng-scope" ng-repeat="option in product.brandOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">84 tablets</b></div>
+                    <div class="td ng-binding">$156.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.brandOptions --><div class="tr ng-scope" ng-repeat="option in product.brandOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">112 tablets</b></div>
+                    <div class="td ng-binding">$237.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.brandOptions --><div class="tr ng-scope" ng-repeat="option in product.brandOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">168 tablets</b></div>
+                    <div class="td ng-binding">$314.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.brandOptions -->
+            </div>
+        </div><!-- end ngIf: product.brandName.length > 2 -->
+    </div>
+    <div class="col-md-6">
+        <!-- ngIf: product.genericName.length > 2 --><div class="product generic ng-scope" ng-if="product.genericName.length > 2">
+            <div class="category">GENERIC EQUIVALENT TO BRANDNAME</div>
+            <div class="product-name ng-binding">Clopidogrel 75mg</div>
+            <div class="manufactured ng-binding">Manufactured by An MHRA</div>
+            <div class="country ng-binding">Product of United Kingdom</div>
+            <div class="prescription"><img src="img/rx.png" alt=""> Prescription Required</div>
+            <div class="table">
+                <div class="tr">
+                    <div class="td"></div>
+                    <div class="td">quantity</div>
+                    <div class="td">price</div>
+                    <div class="td"></div>
+                </div>
+                <!-- ngRepeat: option in product.genericOptions --><div class="tr ng-scope" ng-repeat="option in product.genericOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">30 tablets</b></div>
+                    <div class="td ng-binding">$9.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.genericOptions --><div class="tr ng-scope" ng-repeat="option in product.genericOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">60 tablets</b></div>
+                    <div class="td ng-binding">$13.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.genericOptions --><div class="tr ng-scope" ng-repeat="option in product.genericOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">90 tablets</b></div>
+                    <div class="td ng-binding">$17.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.genericOptions --><div class="tr ng-scope" ng-repeat="option in product.genericOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">120 tablets</b></div>
+                    <div class="td ng-binding">$21.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.genericOptions --><div class="tr ng-scope" ng-repeat="option in product.genericOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">150 tablets</b></div>
+                    <div class="td ng-binding">$27.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.genericOptions --><div class="tr ng-scope" ng-repeat="option in product.genericOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">180 tablets</b></div>
+                    <div class="td ng-binding">$31.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.genericOptions -->
+            </div>
+        </div><!-- end ngIf: product.genericName.length > 2 -->
+    </div>
+</div><!-- end ngRepeat: product in product --><div class="row ng-scope" ng-repeat="product in product">
+    <div class="col-md-6">
+        <!-- ngIf: product.brandName.length > 2 --><div class="product ng-scope" ng-if="product.brandName.length > 2">
+            <div class="category ng-binding">BRAND NAME Plavix</div>
+            <div class="product-name ng-binding">Plavix 300mg</div>
+            <div class="manufactured ng-binding">Manufactured by Sanofi</div>
+            <div class="country ng-binding">Product of United Kingdom</div>
+            <div class="prescription"><img src="img/rx.png" alt=""> Prescription Required</div>
+            <div class="table">
+                <div class="tr">
+                    <div class="td"></div>
+                    <div class="td">quantity</div>
+                    <div class="td">price</div>
+                    <div class="td"></div>
+                </div>
+                <!-- ngRepeat: option in product.brandOptions --><div class="tr ng-scope" ng-repeat="option in product.brandOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">30 tablets</b></div>
+                    <div class="td ng-binding">$395.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.brandOptions --><div class="tr ng-scope" ng-repeat="option in product.brandOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">60 tablets</b></div>
+                    <div class="td ng-binding">$745.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.brandOptions --><div class="tr ng-scope" ng-repeat="option in product.brandOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">90 tablets</b></div>
+                    <div class="td ng-binding">$1,049.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.brandOptions --><div class="tr ng-scope" ng-repeat="option in product.brandOptions">
+                    <div class="td"><span></span></div>
+                    <div class="td"><b class="ng-binding">180 tablets</b></div>
+                    <div class="td ng-binding">$1,994.00 USD</div>
+                    <div class="td"><a href="#" class="btn btn-pink">Add to Cart</a></div>
+                </div><!-- end ngRepeat: option in product.brandOptions -->
+            </div>
+        </div><!-- end ngIf: product.brandName.length > 2 -->
+    </div>
+    <div class="col-md-6">
+        <!-- ngIf: product.genericName.length > 2 -->
+    </div>
+</div><!-- end ngRepeat: product in product -->
+<div class="product-info">
+    <div class="slide-box">
+        <div class="slide-box_title">Basic Information On Plavix <i></i></div>
+        <div class="slide-box_inner">
+            <p>
+                This drug is used to prevent the coagulation of blood in platelets. These clots are generally caused by certain blood vessel or heart conditions. The Plavix drug is also used for the purpose of reducing the risk of blood clotting after heart attack or stroke. However, this drug makes it easier for you to bleed. This can cause heavy bleeding in case of minor injuries. You may also suffer from internal bleeding after using this drug. If you experience bloody or black stool, inform your doctor immediately. This may be a sign of stomach or intestinal bleeding. This risk is further aggravated by alcohol; therefore avoid drinking alcohol while you are on this drug.
+            </p>
+        </div>
+    </div>
+    <div class="slide-box">
+        <div class="slide-box_title">Precautions / Side Effects For Plavix <i></i></div>
+        <div class="slide-box_inner">
+            <p>
+                Clopidogrel is the main ingredient of this drug. You should not take this medicine if you are allergic to this substance. If you need to undergo any surgery, you should inform your doctor about your Plavix use. Similar precaution should be taken if you decide to go for dental work. Generic or brand Plavix should not be used if you have suffered from stomach ulcers. You may need to undertake special tests before taking this medicine, if you ever had any blood clotting disorder.
+            </p>
+            <p>
+                If you have suffered from stroke or mini stroke, you should inform your doctor. Generic or brand Plavix is not known to cause any harm to an unborn baby, however you should still inform your health care provider if you get pregnant. It is not known whether the drug passes into breast milk or not. Therefore, you should not take Clopidogrel if you are nursing a baby.
+            </p>
+        </div>
+    </div>
+    <div class="slide-box">
+        <div class="slide-box_title">Plavix Dosage <i></i></div>
+        <div class="slide-box_inner">
+            <p>
+                The initial recommended dosage of the drug is 75 mg once daily. The medicine can be taken with or without food. However, you should take this medicine according to your doctor’s advice. This medicine is available in two strengths of 75 mg and 300 mg. The 75 mg tablet is pink in color and is round in shape, whereas 300 mg drug comes in the form of an oblong, film-coated pink tablet. Plavix should be carefully stored. The ideal temperature for storing this drug is between 15 degree and 30 degree Celsius.
+            </p>
+        </div>
+    </div>
+    <div class="slide-box">
+        <div class="slide-box_title">Buy Plavix From North Drug Store <i></i></div>
+        <div class="slide-box_inner">
+            <p>
+                North Drug Store stocks Plavix in bottles containing 30, 90 and 500 tablets. Buy Plavix from North Drug Store and enjoy our professional service and on time delivery.
+            </p>
+        </div>
+    </div>
+    <br>
+    <p>
+        * All trademarks and registered trademarks are the property of their respective owners.
+    </p>
+    <div class="discaimer">
+        <p>
+            IMPORTANT DISCAIMER: All medical content is supplied by a third party company who is independent from this web site. As such, this web site can not guarantee the reliability, accuracy, and /or medical efficacy of the information provided. In all circumstances, you should seek the advice of a health proffesional pertaining to drug, treatment and/or medical condition advice. Note that not all products are shipped by our contracted Canadian pharmacy. This website cantracts with dispensaries around the world that ship products directly to our customers. Some of the jurisdiction include but are not limited to United Kingdom, Europe, Turkey, India, Singapore, Canada, Vanuatu, Mauritius, and USA. The items within your order may be shipped from any one of these jurisdiction depending on the availability and cost of the products at the time you place your order. The products are sourced from these countries as well as others. Please note that the product appearance may vary from actual product received depending on availability.
+        </p>
+    </div>
+</div>
+</div>
+</main>
+    <footer my-footer=""><div class="container">
+    <div class="row footer-contacts">
+        <div class="col-md-4">
+            <b>contact us</b>
+            <p>
+                Toll Free Phone: 1-866-456-2456 <br>
+                Toll Free Fax: 1-866-783-4223 <br>
+                International Phone: 001-204-255-9911 <br>
+                International Fax: 001-204-256-3802
+            </p>
+        </div>
+        <div class="col-md-4">
+            <b>HOURS OF OPERATION</b>
+            <p>
+                Monday to Friday - 7:00 am to Midnight (CST)<br>
+                Saturday - 8:00 am to 6:00 pm (CST)<br>
+                Sunday - 9:30 am to 6:00 pm (CST)
+            </p>
+        </div>
+        <div class="col-md-4">
+            <b>MAILING ADDRESS</b>
+            <p>
+                207 Regent Street, 3rd Floor<br>
+                London, United Kingdom<br>
+                W1B 3HH<br>
+                * Returns are not accepted at this address.
+            </p>
+        </div>
+    </div>
+    <nav class="footer-nav clearfix">
+        <ul>
+            <li><a href="#">Place A New Order</a></li>
+            <li><a href="#">Refill Your Order</a></li>
+            <li><a href="#">How To Order</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="copy">
+    <div class="container">
+        <img src="img/logo-footer.png" class="logo-footer" alt="">
+        <p>
+            Copyright ©2002-2016 universaldrugstore.com "Universal Drugstore™" and "universaldrugstore.com"
+            are registered trademarks of "Universal Drugstore ™" All rights reserved.
+            All trademarks and registered trademarks are the property of their respective owners.
+        </p>
+        <ul class="soc-btn">
+            <li><a href="#" class="fb"></a></li>
+            <li><a href="#" class="tw"></a></li>
+        </ul>
+    </div>
+</div>
+</footer>
+    <script src="js/bootstrap-select.min.js"></script>
+
+
+</body></html>

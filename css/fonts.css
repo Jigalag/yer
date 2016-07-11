@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'GothaProReg';
+    src: url('../fonts/museosanscyrl-100-webfont.eot');
+    src: url('../fonts/museosanscyrl-100-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/museosanscyrl-100-webfont.woff') format('woff'),
+    url('../fonts/GothaProReg.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GothaProMed';
+    src: url('../fonts/GothaProMed.eot');
+    src: url('../fonts/GothaProMed.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothaProMed.woff') format('woff'),
+    url('../fonts/GothaProMed.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GothaProBold';
+    src: url('../fonts/GothaProBold.eot');
+    src: url('../fonts/GothaProBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothaProBold.woff') format('woff'),
+    url('../fonts/GothaProBold.otf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'GothaProBlack';
+    src: url('../fonts/GothaProBlack.eot');
+    src: url('../fonts/GothaProBlack.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothaProBlack.woff') format('woff'),
+    url('../fonts/GothaProBlack.otf') format('truetype');
+    font-weight: bold;
+}
