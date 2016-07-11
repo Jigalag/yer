@@ -335,6 +335,106 @@ textarea {
   color: #e64b66;
   font: 13px/13px 'GothaProReg';
 }
+.orderTable {
+  color: #040404;
+}
+.orderTable .tableCell {
+  font: 12px/12px 'GothaProMed';
+  text-align: left;
+  padding: 0 10px;
+}
+.orderTable .tableCell:nth-child(1) {
+  width: 120px;
+}
+.orderTable .tableCell:nth-child(2) {
+  width: 120px;
+}
+.orderTable .tableCell:nth-child(3) {
+  width: 120px;
+}
+.orderTable .tableCell:nth-child(4) {
+  width: 380px;
+}
+.ordersTitle {
+  height: 50px;
+  color: #828282;
+  text-transform: uppercase;
+}
+.accItem {
+  margin-bottom: 10px;
+}
+.accTitle {
+  height: 50px;
+  background: #f6f8fa;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #dddfe1;
+  position: relative;
+}
+.accTitle:after {
+  content: '\f0d7 ';
+  color: #26598c;
+  font: 16px/16px 'FontAwesome';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.accTitle.active:after {
+  content: '\f0d8 ';
+}
+.accTitle .tableCell {
+  font-family: 'GothaProReg';
+}
+.accTitle .tableCell strong {
+  font-family: 'GothaProMed';
+  font-weight: normal;
+}
+.accTitle .tableCell a {
+  display: inline-block;
+  color: #3b94ec;
+  text-decoration: underline;
+  margin: 0 10px 0 0;
+  text-transform: capitalize;
+}
+.accBlock {
+  padding: 0 10px 0 10px;
+  border: 1px solid #dddfe1;
+  border-top: none;
+  display: none;
+}
+.accBlock .line {
+  padding: 5px 0;
+  font: 14px/32px 'GothaProMed';
+  color: #1f1f1f;
+  border-bottom: 1px solid #dde0e4;
+}
+.accBlock .line.noBorder {
+  border: none;
+}
+.accBlock span {
+  color: #535252;
+  text-transform: uppercase;
+  min-width: 20%;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 10px 0 0;
+}
+.accBlock .orderSubTitle {
+  font-size: 16px;
+  color: #26598c;
+  text-transform: capitalize;
+}
+.accBlock p {
+  font: 12px/12px 'GothaProReg';
+  margin: 5px 0;
+}
+.accBlock .btn {
+  margin: 0 0 0 10px;
+}
 @media screen and (min-width: 992px) {
   .subNavigation ul {
     display: block !important;
@@ -352,6 +452,16 @@ textarea {
   }
   .tableCell {
     display: table-row;
+  }
+  .orderTable .tableCell {
+    display: table-cell;
+    font: 10px/10px 'GothaProMed';
+    text-align: left;
+    padding: 0 5px;
+    width: 25% !important;
+  }
+  .accBlock * {
+    font-size: 12px !important;
   }
   .callBlockDoctor {
     padding: 30px;
