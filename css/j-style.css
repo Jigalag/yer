@@ -219,6 +219,11 @@ textarea {
 .health-profile-page .container {
   overflow: hidden;
 }
+@media screen and (min-width: 992px) {
+  .subNavigation ul {
+    display: block !important;
+  }
+}
 @media screen and (max-width: 992px) {
   .subForm {
     width: 100%;
