@@ -213,6 +213,9 @@ textarea {
 .btn-link:hover:after {
   display: none;
 }
+.health-profile-page.container {
+  overflow: hidden;
+}
 .health-profile-page .container {
   overflow: hidden;
 }
