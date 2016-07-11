@@ -1,0 +1,279 @@
+<!doctype html>
+<html ng-app="udsgulp" class="ng-scope">
+<head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/j-style.css">
+
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+</head>
+<header my-header="">
+    <div class="top">
+        <div class="container">
+            <div class="call-block">
+                Call Toll Free <a href="callto:+18664562456"><img src="img/call-icn.png" width="17" height="17" alt="">1-866-456-2456</a>
+            </div>
+            <div class="free-shipping">
+                <b>free shipping</b> on all orders over $100
+            </div>
+            <div class="user-btns">
+                <a href="#"><img src="img/login-icn.png" alt="">Sign in</a>
+                <a href="#"><img src="img/reg-icn.png" alt="">Register</a>
+            </div>
+            <div class="mobile-top-nav">
+                <a href="#" class="login-btn"></a>
+                <a href="#" class="cart-btn"></a>
+                <a href="#" class="nav-btn"></a>
+            </div>
+        </div>
+    </div>
+    <ul class="login-nav">
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Register</a></li>
+    </ul>
+    <div class="container">
+        <a href="#/" class="logo"><img class="img-responsive" src="img/logo.png" alt=""></a>
+        <form method="get" action="" class="header-search ng-pristine ng-valid">
+            <input type="search" name="q" ng-model="search" placeholder="Find Your Medications (eg. Plavix, Viagra, Lipitor, etc.)" class="ng-pristine ng-untouched ng-valid" aria-invalid="false">
+            <button type="submit"></button>
+        </form>
+        <a href="#" class="header-cart ng-scope ng-binding" ng-controller="headerCartCtrl">
+            <span>shopping cart</span>
+            533 items- <b class="ng-binding">$1139 USD</b>
+        </a>
+    </div>
+    <nav class="header-nav">
+        <div class="container">
+            <a href="#/" class="active">Home</a>
+            <a href="/#orderonline">Place a new order</a>
+            <a href="#">Refill order</a>
+            <a href="#">How to order</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact us</a>
+        </div>
+    </nav>
+</header>
+<main class="ng-scope">
+    <div class="container health-profile-page ng-scope">
+        <div class="col-md-3">
+            <div class="subNavigation left fullWidth">
+                <div class="mobileNav">
+                    <span class="navBurger">
+                        <span></span>
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="account.html">
+                            My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                            My Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="order-refill.html" class="active">
+                            Order Refill
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shipping.html">
+                            Shipping Address
+                        </a>
+                    </li>
+                    <li>
+                        <a href="health-profile.html">
+                            Health Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="credit-cards.html">
+                            My Credit Cards
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="customTitle">Order Refill</h3>
+                    <div class="refillItems">
+                        <div class="itemRefill active">
+                            <div class="remainingText">17 days of medicine remaining</div>
+                            <div class="tableDiv">
+                                <div class="tableCell col-md-1">
+                                    <div class="customCheckbox">
+                                        <input type="checkbox" id="11" checked>
+                                        <label for="11"></label>
+                                    </div>
+                                </div>
+                                <div class="tableCell col-md-4 textLeft">
+                                    <div class="nameOrder">
+                                        Plavix 75mg
+                                    </div>
+                                    <div class="textOrder">
+                                        <p>Manufactured by Sanofi.</p>
+                                        <p>roduct of United Kingdom</p>
+                                        <p>Shipped from United Kingdom</p>
+                                    </div>
+                                    <div class="requiredOrder">
+                                        <img src="img/req-ico.png">Prescription Required
+                                    </div>
+                                </div>
+                                <div class="tableCell col-md-5 textLeft">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>28 tablets - $79.00 USD ($2.82 USD/tab)</option>
+                                            <option>Dinner</option>
+                                            <option>Evening</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="tableCell col-md-2">
+                                    <span>$79.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemRefill">
+                            <div class="remainingText">17 days of medicine remaining</div>
+                            <div class="tableDiv">
+                                <div class="tableCell col-md-1">
+                                    <div class="customCheckbox">
+                                        <input type="checkbox" id="12">
+                                        <label for="12"></label>
+                                    </div>
+                                </div>
+                                <div class="tableCell col-md-4 textLeft">
+                                    <div class="nameOrder">
+                                        Plavix 75mg
+                                    </div>
+                                    <div class="textOrder">
+                                        <p>Manufactured by Sanofi.</p>
+                                        <p>roduct of United Kingdom</p>
+                                        <p>Shipped from United Kingdom</p>
+                                    </div>
+                                    <div class="requiredOrder">
+                                        <img src="img/req-ico.png">Prescription Required
+                                    </div>
+                                </div>
+                                <div class="tableCell col-md-5 textLeft">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>28 tablets - $79.00 USD ($2.82 USD/tab)</option>
+                                            <option>Dinner</option>
+                                            <option>Evening</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="tableCell col-md-2">
+                                    <span>$79.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="totalInfo right">
+                            <div class="row">
+                                <span class="col-md-6">Subtotal:</span>
+                                <span class="col-md-6">$278.00 USD</span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6">Shipping::</span>
+                                <span class="col-md-6">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 greyTotal">
+                        <div class="totalInfo right">
+                            <div class="row">
+                                <span class="col-md-6">Total:</span>
+                                <span class="col-md-6">$278.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger right refillBtn">Place Refill Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer my-footer=""><div class="container">
+        <div class="row footer-contacts">
+            <div class="col-md-4">
+                <b>contact us</b>
+                <p>
+                    Toll Free Phone: 1-866-456-2456 <br>
+                    Toll Free Fax: 1-866-783-4223 <br>
+                    International Phone: 001-204-255-9911 <br>
+                    International Fax: 001-204-256-3802
+                </p>
+            </div>
+            <div class="col-md-4">
+                <b>HOURS OF OPERATION</b>
+                <p>
+                    Monday to Friday - 7:00 am to Midnight (CST)<br>
+                    Saturday - 8:00 am to 6:00 pm (CST)<br>
+                    Sunday - 9:30 am to 6:00 pm (CST)
+                </p>
+            </div>
+            <div class="col-md-4">
+                <b>MAILING ADDRESS</b>
+                <p>
+                    207 Regent Street, 3rd Floor<br>
+                    London, United Kingdom<br>
+                    W1B 3HH<br>
+                    * Returns are not accepted at this address.
+                </p>
+            </div>
+        </div>
+        <nav class="footer-nav clearfix">
+            <ul>
+                <li><a href="#">Place A New Order</a></li>
+                <li><a href="#">Refill Your Order</a></li>
+                <li><a href="#">How To Order</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="copy">
+        <div class="container">
+            <img src="img/logo-footer.png" class="logo-footer" alt="">
+            <p>
+                Copyright ©2002-2016 universaldrugstore.com "Universal Drugstore™" and "universaldrugstore.com"
+                are registered trademarks of "Universal Drugstore ™" All rights reserved.
+                All trademarks and registered trademarks are the property of their respective owners.
+            </p>
+            <ul class="soc-btn">
+                <li><a href="#" class="fb"></a></li>
+                <li><a href="#" class="tw"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
