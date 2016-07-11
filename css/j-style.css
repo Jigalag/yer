@@ -213,15 +213,136 @@ textarea {
 .btn-link:hover:after {
   display: none;
 }
+.health-profile-page {
+  min-height: 600px;
+}
 .health-profile-page.container {
   overflow: hidden;
 }
 .health-profile-page .container {
   overflow: hidden;
 }
+.simpleProfileInfo {
+  margin-top: 15px;
+}
+.simpleProfileInfo p {
+  margin: 0;
+  font: 15px/20px 'GothaProReg';
+  color: #040404;
+}
+.simpleProfileInfo a {
+  display: inline-block;
+  color: #3b94ec;
+  text-decoration: underline;
+  margin: 0 10px 0 0;
+}
+.simpleProfileInfo .editLinks {
+  margin-top: 15px;
+}
+.simpleProfileInfo .infoTitle {
+  margin-bottom: 15px;
+  font: 17px/17px 'GothaProMed';
+  color: #040404;
+}
+.cardsBlock .simpleProfileInfo {
+  margin-top: 0;
+}
+.cardsBlock .cardItem {
+  height: 140px;
+  border: 2px solid #ced1d4;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.cardsBlock .cardItem .cardIco {
+  width: 49px;
+  height: 32px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.cardsBlock .cardItem .cardData {
+  float: left;
+  width: 100%;
+}
+.cardsBlock .cardItem .cardNumber {
+  line-height: 30px;
+}
+.cardsBlock .editCard {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.addressItems .addressItem {
+  padding: 40px 10px 10px 10px;
+  border: 2px solid transparent;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.addressItems .addressItem.active {
+  border-color: #21a0a0;
+}
+.addressItems .addressItem .editAddress {
+  margin-top: 5px;
+}
+.addressItems .addressItem .activeItem {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 0 10px 0 0;
+  color: #21a0a0;
+}
+.addAddress {
+  font: 15px/20px 'GothaProReg';
+  color: #3b94ec;
+  float: left;
+  width: 100%;
+}
+.addAddress span {
+  text-decoration: underline;
+}
+.addAddress .fa {
+  margin: 0 5px 0 0;
+}
+.requiredInfo {
+  font: 13px/13px 'GothaProReg';
+  color: #e64b66;
+  margin: 15px 0;
+}
+.shippingLabel {
+  padding: 0 0 0 10px;
+}
+.formTitle {
+  margin-top: 25px;
+  font: 15px/17px 'GothaProMed';
+  color: #040404;
+  float: left;
+  width: 100%;
+}
+.requiredLabel {
+  position: relative;
+}
+.requiredLabel:after {
+  content: '*';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #e64b66;
+  font: 13px/13px 'GothaProReg';
+}
 @media screen and (min-width: 992px) {
   .subNavigation ul {
     display: block !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .header-nav a {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 992px) {
