@@ -91,12 +91,52 @@
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
+        &:focus{
+          text-decoration: none;
+        }
+        .fa{
+          color: #9b9ea3;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+        }
         &:hover, &.active{
           background: #21a0a0;
           color: #ffffff;
+          .fa {
+            color: #ffffff;
+          }
+        }
+        &.open{
+          .fa{
+           -webkit-transform: rotateZ(-180deg);
+           -moz-transform: rotateZ(-180deg);
+           -ms-transform: rotateZ(-180deg);
+           -o-transform: rotateZ(-180deg);
+           transform: rotateZ(-180deg);
+          }
         }
       }
       margin-bottom: 8px;
+      .subUl{
+        display: none;
+        li{
+          float: left;
+          margin-bottom: 1px;
+          a{
+            background: #d8dadd;
+            font: 15px/20px 'GothaProReg';
+            color: #33333a;
+            padding: 13px 13px 13px 33px;
+            &:hover, &.active{
+              background: #21a0a0;
+              color: #ffffff;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -107,6 +147,8 @@
 }
 .customHR{
   margin: 15px 0;
+  width: 100%;
+  float: left;
 }
 .form-group{
   label{
@@ -245,7 +287,6 @@ textarea{
 }
 .refillBtn{
   margin-top: 15px;
-  text-transform: capitalize;
 }
 .simpleProfileInfo{
   margin-top: 15px;
@@ -468,6 +509,8 @@ textarea{
 }
 .refillItems{
   margin: 25px 0;
+  float: left;
+  width: 100%;
 }
 .itemRefill{
   border: 1px solid #dde0e4;
@@ -523,6 +566,13 @@ textarea{
   }
   .form-group{
     margin-bottom: 0;
+  }
+}
+.smallRefill{
+  .itemRefill{
+    .tableDiv{
+      height: 120px;
+    }
   }
 }
 .totalInfo{
@@ -582,10 +632,89 @@ textarea{
     }
   }
 }
+.fileUploader{
+  background: #f5f7f9;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  width: 100%;
+  height: 180px;
+  span{
+    color: #323232;
+    font: 14px/23px 'GothaProReg';
+    margin: 0 15px;
+  }
+  .btnGreen{
+    background: #858c97;
+    padding: 0 15px;
+    &:hover{
+      background: #858c97;
+      &:after{
+        background: #858c97;
+      }
+    }
+  }
+}
+.prescriptionBLock{
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 15px;
+  .tableDiv{
+    .tableCell{
+      &:nth-child(1){
+        width: 90px;
+      }
+    }
+  }
+  .fileUploader{
+    margin-top: 20px;
+    height: 80px;
+  }
+}
+.profileTitle{
+  font: 15px/18px 'GothaProMed';
+  color: #4a4a4a;
+  margin: 20px 0 10px;
+  text-align: center;
+  &.textLeft{
+    text-align: left;
+  }
+}
+.profileSubTitle{
+  font: 17px/20px 'GothaProMed';
+  color: #21a0a0;
+  text-align: center;
+}
+.files{
+  margin: 15px 0;
+  .itemFile{
+    font: 14px/17px 'GothaProReg';
+    color: #4a4a4a;
+    strong{
+      font-weight: normal;
+      font-family: 'GothaProBold';
+    }
+    .fa{
+      color: #21a0a0;
+      margin: 0 6px 0 0;
+      display: inline-block;
+      vertical-align: baseline;
+      line-height: 17px;
+    }
+  }
+}
 @media screen and (min-width: 992px){
 
   .subNavigation {
-    ul {
+    & > ul {
       display: block !important;
     }
   }
@@ -602,6 +731,36 @@ textarea{
   }
   .tableCell {
     display: table-row;
+  }
+
+  .prescriptionBLock{
+    img{
+      display: block;
+      margin: 15px auto 20px;
+    }
+  }
+  .fileUploader{
+    height: auto !important;
+    span{
+      display: block;
+      text-align: center;
+    }
+    img{
+      display: block;
+      margin: 15px auto 20px;
+    }
+    .btnGreen{
+      background: #858c97;
+      padding: 0 15px;
+      display: block;
+      margin: 15px auto 20px;
+      &:hover{
+        background: #858c97;
+        &:after{
+          background: #858c97;
+        }
+      }
+    }
   }
   .orderTable{
     .tableCell{

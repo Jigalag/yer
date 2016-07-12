@@ -2,7 +2,7 @@
 if ($('.navBurger').length > 0){
     $('.navBurger').on('click', function(e){
         e.preventDefault();
-        $(this).toggleClass('active').parents('.subNavigation').find('ul').slideToggle();
+        $(this).toggleClass('active').parents('.subNavigation').find('ul').first().slideToggle();
     });
 }
 if ($('[data-content="accordion"]').length > 0){
@@ -17,3 +17,7 @@ if ($('[data-content="accordion"]').length > 0){
         })
     });
 }
+$('.subLink').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('open').next().slideToggle();
+});
