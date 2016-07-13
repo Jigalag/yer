@@ -1,0 +1,618 @@
+<!doctype html>
+<html ng-app="udsgulp" class="ng-scope">
+<head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/j-style.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+</head>
+<header my-header="">
+    <div class="top">
+        <div class="container">
+            <div class="call-block">
+                Call Toll Free <a href="callto:+18664562456"><img src="img/call-icn.png" width="17" height="17" alt="">1-866-456-2456</a>
+            </div>
+            <div class="free-shipping">
+                <b>free shipping</b> on all orders over $100
+            </div>
+            <div class="user-btns">
+                <a href="#"><img src="img/login-icn.png" alt="">Sign in</a>
+                <a href="#"><img src="img/reg-icn.png" alt="">Register</a>
+            </div>
+            <div class="mobile-top-nav">
+                <a href="#" class="login-btn"></a>
+                <a href="#" class="cart-btn"></a>
+                <a href="#" class="nav-btn"></a>
+            </div>
+        </div>
+    </div>
+    <ul class="login-nav">
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Register</a></li>
+    </ul>
+    <div class="container">
+        <a href="#/" class="logo"><img class="img-responsive" src="img/logo.png" alt=""></a>
+        <form method="get" action="" class="header-search ng-pristine ng-valid">
+            <input type="search" name="q" ng-model="search" placeholder="Find Your Medications (eg. Plavix, Viagra, Lipitor, etc.)" class="ng-pristine ng-untouched ng-valid" aria-invalid="false">
+            <button type="submit"></button>
+        </form>
+        <a href="#" class="header-cart ng-scope ng-binding" ng-controller="headerCartCtrl">
+            <span>shopping cart</span>
+            533 items- <b class="ng-binding">$1139 USD</b>
+        </a>
+    </div>
+    <nav class="header-nav">
+        <div class="container">
+            <a href="#/" class="active">Home</a>
+            <a href="/#orderonline">Place a new order</a>
+            <a href="#">Refill order</a>
+            <a href="#">How to order</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact us</a>
+        </div>
+    </nav>
+</header>
+<main class="ng-scope">
+    <div class="container health-profile-page ng-scope">
+        <div class="col-md-12">
+            <h2 class="customH2">New customer registration</h2>
+            <div class="ordersAccordion registerAcc left fullWidth" data-content="accordion">
+                <div class="accItem left fullWidth">
+                    <div class="accTitle left fullWidth">
+                        <div class="stepIco">
+                            <span class="number">1</span>
+                            <span class="check">
+                                <i class="fa fa-check"></i>
+                            </span>
+                        </div>
+                        Customer Information
+                    </div>
+                    <div class="accBlock left fullWidth" style="display: block;">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <form class="simpleLabel">
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Password</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Confirm Password</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>First Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group statusIco successIco">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Last Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group statusIco errorIco">
+                                                    <input type="text" class="form-control errorControl" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Date of Birth</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-4 form-group">
+                                                        <select class="form-control">
+                                                            <option>MM</option>
+                                                            <option>Region</option>
+                                                            <option>Region</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4 form-group">
+                                                        <select class="form-control">
+                                                            <option>DD</option>
+                                                            <option>Region</option>
+                                                            <option>Region</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4 form-group">
+                                                        <select class="form-control">
+                                                            <option>YYYY</option>
+                                                            <option>Region</option>
+                                                            <option>Region</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Home Phone Number</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Mobile Phone Number</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Address</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Address Line 2</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Zip/Postal Code</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>City/Town</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>State</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option>Alabama</option>
+                                                        <option>Region</option>
+                                                        <option>Region</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-4">
+                                                <div class="form-group">
+                                                    <label>Country</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-8">
+                                                <div class="form-group">
+                                                    <select class="form-control errorControl">
+                                                        <option>United States</option>
+                                                        <option>Region</option>
+                                                        <option>Region</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="formText">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ligula accumsan, euismod diam vel, dignissim tortor. Sed vel purus sit amet lorem consectetur aliquam. Curabitur nisi eros, porta ut arcu quis, tincidunt consequat lorem. Curabitur aliquam rhoncus augue, quis auctor arcu imperdiet id. Morbi sed tempus neque. Aliquam congue elit at turpis gravida viverra. Etiam pharetra urna eu ex finibus congue. Suspendisse auctor luctus arcu et ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce quis lacus tellus.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="customCheckbox checkBoxWithLabel">
+                                                <input type="checkbox" id="11">
+                                                <label for="11">I have read and agree to the Patient Acknolowgement Agreement & Terms od use.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button type="button" class="btn btn-danger">Register</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accItem left fullWidth">
+                    <div class="accTitle deActive left fullWidth">
+                        <div class="stepIco">
+                            <span class="number">2</span>
+                            <span class="check">
+                                <i class="fa fa-check"></i>
+                            </span>
+                        </div>
+                        Health profile
+                    </div>
+                    <div class="accBlock left fullWidth">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <form>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-7">
+                                                <div class="form-group">
+                                                    <label>Do you have any drug allergies?</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-5">
+                                                <div class="form-group">
+                                                    <div class="radio customRadio">
+                                                        <input type="radio" name="optionsRadios" id="yes" value="option1" checked>
+                                                        <label for="yes">Yes</label>
+                                                    </div>
+                                                    <div class="radio customRadio">
+                                                        <input type="radio" name="optionsRadios" id="no" value="option1">
+                                                        <label for="no">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option>Other</option>
+                                                        <option>Other</option>
+                                                        <option>Other</option>
+                                                        <option>Other</option>
+                                                        <option>Other</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="customHR"/>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-7">
+                                                <div class="form-group">
+                                                    <label>Do you had any surgeries that we should know about?</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-5">
+                                                <div class="form-group">
+                                                    <div class="radio customRadio">
+                                                        <input type="radio" name="optionsRadios1" id="yes1" value="option1" checked>
+                                                        <label for="yes1">Yes</label>
+                                                    </div>
+                                                    <div class="radio customRadio">
+                                                        <input type="radio" name="optionsRadios1" id="no1" value="option1">
+                                                        <label for="no1">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="customHR"/>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-7">
+                                                <div class="form-group">
+                                                    <label>Are you taking any medications other than the ones you are ordering today?</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-5">
+                                                <div class="form-group">
+                                                    <div class="radio customRadio">
+                                                        <input type="radio" name="optionsRadios2" id="yes2" value="option1" checked>
+                                                        <label for="yes2">Yes</label>
+                                                    </div>
+                                                    <div class="radio customRadio">
+                                                        <input type="radio" name="optionsRadios2" id="no2" value="option1">
+                                                        <label for="no2">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="customHR"/>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-7">
+                                                <div class="form-group">
+                                                    <label>Best time to contact you:</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-5">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option>Morning</option>
+                                                        <option>Dinner</option>
+                                                        <option>Evening</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="customHR"/>
+                                    <div class="row">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left col-md-7">
+                                                <div class="form-group">
+                                                    <label>Best phone number to contact you during this time frame</label>
+                                                </div>
+                                            </div>
+                                            <div class="tableCell text-left col-md-5">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="customHR"/>
+                                    <div class="row">
+                                        <div class="col-md-12 callBlockDoctor">
+                                            <div class="row">
+                                                <div class="tableDiv">
+                                                    <div class="col-md-2 tableCell">
+                                                        <img src="img/phone-ico.png" alt="" title="">
+                                                    </div>
+                                                    <div class="col-md-10 tableCell text-left">
+                                                        <span class="callTitle">Want us to call you doctor for your prescriptions, free of charge?</span>
+                                                        <p class="callText">Please provide us with your doctor’s contact information and we will contact them on your behalf to request your prescription.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="customHR"/>
+                                            <div class="subForm">
+                                                <div class="row">
+                                                    <div class="tableDiv">
+                                                        <div class="tableCell text-left col-md-5">
+                                                            <div class="form-group">
+                                                                <label>First Name</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tableCell text-left col-md-7">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="tableDiv">
+                                                        <div class="tableCell text-left col-md-5">
+                                                            <div class="form-group">
+                                                                <label>Last Name</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tableCell text-left col-md-7">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="tableDiv">
+                                                        <div class="tableCell text-left col-md-5">
+                                                            <div class="form-group">
+                                                                <label>Phone Number</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tableCell text-left col-md-7">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="tableDiv">
+                                                        <div class="tableCell text-left col-md-5">
+                                                            <div class="form-group">
+                                                                <label>Fax Number</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tableCell text-left col-md-7">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="customHR"/>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button type="button" class="btn btn-success">Update Profile</button>
+                                            <button type="button" class="btn btn-link">Cancel</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer my-footer=""><div class="container">
+    <div class="row footer-contacts">
+        <div class="col-md-4">
+            <b>contact us</b>
+            <p>
+                Toll Free Phone: 1-866-456-2456 <br>
+                Toll Free Fax: 1-866-783-4223 <br>
+                International Phone: 001-204-255-9911 <br>
+                International Fax: 001-204-256-3802
+            </p>
+        </div>
+        <div class="col-md-4">
+            <b>HOURS OF OPERATION</b>
+            <p>
+                Monday to Friday - 7:00 am to Midnight (CST)<br>
+                Saturday - 8:00 am to 6:00 pm (CST)<br>
+                Sunday - 9:30 am to 6:00 pm (CST)
+            </p>
+        </div>
+        <div class="col-md-4">
+            <b>MAILING ADDRESS</b>
+            <p>
+                207 Regent Street, 3rd Floor<br>
+                London, United Kingdom<br>
+                W1B 3HH<br>
+                * Returns are not accepted at this address.
+            </p>
+        </div>
+    </div>
+    <nav class="footer-nav clearfix">
+        <ul>
+            <li><a href="#">Place A New Order</a></li>
+            <li><a href="#">Refill Your Order</a></li>
+            <li><a href="#">How To Order</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</div>
+    <div class="copy">
+        <div class="container">
+            <img src="img/logo-footer.png" class="logo-footer" alt="">
+            <p>
+                Copyright ©2002-2016 universaldrugstore.com "Universal Drugstore™" and "universaldrugstore.com"
+                are registered trademarks of "Universal Drugstore ™" All rights reserved.
+                All trademarks and registered trademarks are the property of their respective owners.
+            </p>
+            <ul class="soc-btn">
+                <li><a href="#" class="fb"></a></li>
+                <li><a href="#" class="tw"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
