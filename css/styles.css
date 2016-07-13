@@ -1,0 +1,144 @@
+.customH2 {
+  font: 26px/26px 'GothaProBold';
+  color: #21a0a0;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.registerAcc .accTitle {
+  border: none;
+  padding: 9px;
+  font: 16px/34px 'GothaProMed';
+  color: #26598c;
+}
+.registerAcc .accTitle:after {
+  display: none;
+}
+.registerAcc .accTitle .stepIco {
+  width: 32px;
+  height: 32px;
+  background: #26598c;
+  color: #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 7px 0 0;
+  float: left;
+}
+.registerAcc .accTitle .stepIco .number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font: 17px/34px 'GothaProBold';
+  color: #ffffff;
+  text-align: center;
+}
+.registerAcc .accTitle .stepIco .check {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  font: 17px/32px 'FontAwesome';
+  color: #ffffff;
+  text-align: center;
+}
+.registerAcc .accTitle.successStep {
+  color: #21a0a0;
+}
+.registerAcc .accTitle.successStep .stepIco {
+  background: #21a0a0;
+}
+.registerAcc .accTitle.successStep .stepIco .check {
+  opacity: 1;
+}
+.registerAcc .accTitle.successStep .stepIco .number {
+  opacity: 0;
+}
+.registerAcc .accTitle.deActive {
+  color: #d0d3d6;
+  cursor: default;
+  pointer-events: none;
+}
+.registerAcc .accTitle.deActive .stepIco {
+  background: #d0d3d6;
+}
+.registerAcc .accBlock {
+  border: none;
+  padding-top: 40px;
+}
+.form-group label {
+  margin: 0;
+}
+.simpleLabel .form-group label {
+  font-family: 'GothaProReg';
+}
+.errorControl {
+  border-color: #e64b66;
+}
+.errorControl {
+  border-color: #e64b66;
+}
+.statusIco {
+  position: relative;
+}
+.statusIco:after {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border: 1px solid;
+  right: 10px;
+  top: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-family: 'FontAwesome';
+  line-height: 23px;
+  text-align: center;
+}
+.statusIco.successIco:after {
+  border-color: #21a0a0;
+  color: #21a0a0;
+  content: '\f00c';
+}
+.statusIco.errorIco:after {
+  content: '\f00d';
+  border-color: #e64b66;
+  color: #e64b66;
+}
+.formText {
+  padding: 8px;
+  border: 1px solid #bcc0c3;
+  font: 12px/16px 'GothaProReg';
+  color: #323232;
+  margin-top: 15px;
+}
+.checkBoxWithLabel {
+  margin-bottom: 30px;
+}
+.checkBoxWithLabel input + label {
+  width: auto;
+  height: auto;
+  padding: 0 0 0 35px;
+  line-height: 25px;
+  font-family: 'GothaProReg';
+  font-weight: normal;
+  font-size: 14px;
+}
+.checkBoxWithLabel input + label:before {
+  width: 25px;
+  height: 25px;
+}
+.checkBoxWithLabel input:checked + label:after {
+  width: 25px;
+  height: 25px;
+}
+@media screen and (max-width: 992px) {
+  .registerAcc .accTitle {
+    font: 14px/34px 'GothaProMed';
+  }
+}
