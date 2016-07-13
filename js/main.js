@@ -9,10 +9,11 @@ if ($('[data-content="accordion"]').length > 0){
     $('[data-content="accordion"]').each(function(){
         $(this).find('.accTitle').on('click', function(){
             if ($(this).hasClass('active')){
-                $(this).removeClass('active').parents('.accItem').find('.accBlock').slideUp('fast');
+                $(this).removeClass('active').parents('.accItem').find('.accBlock').slideUp();
             }
             else{
-                $(this).addClass('active').parents('.accItem').find('.accBlock').slideDown('fast');
+                $('.accTitle').removeClass('active').parents('.accItem').find('.accBlock').slideUp();
+                $(this).addClass('active').parents('.accItem').find('.accBlock').slideDown();
             }
         })
     });
