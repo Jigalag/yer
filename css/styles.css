@@ -215,6 +215,53 @@
   margin-top: 30px;
 }
 /* COntanct */
+/* Modal */
+.modal-dialog {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+.modal-dialog .modal-content {
+  margin: auto;
+  overflow: hidden;
+}
+.modal-dialog .modal-content .modal-header {
+  background: #f6f8fa;
+  border-bottom: 1px solid #dddddd;
+}
+.modal-dialog .modal-content .modal-header h4 {
+  font: 18px/18px 'GothaProBold';
+  color: #26598c;
+  text-align: center;
+  text-transform: uppercase;
+}
+.modal-dialog .modal-content .modal-body {
+  padding: 30px;
+  overflow: hidden;
+}
+.modal-dialog .modal-content .modal-footer {
+  border-top: none;
+  padding-top: 0;
+}
+/* Modal */
+/* Login Modal */
+.loginModal .modal-content {
+  width: 500px;
+}
+.loginModal .modal-content .modalLink {
+  font: 15px/25px 'GothaProReg';
+  color: #1181e1;
+  text-decoration: underline;
+  display: inline-block;
+}
+.loginModal .modal-content .customCheckbox {
+  margin: 0;
+}
+.loginModal .modal-content .modal-footer .modalLink {
+  margin-top: 10px;
+}
+/* Login Modal */
 @media screen and (max-width: 992px) {
   .registerAcc .accTitle {
     font: 14px/34px 'GothaProMed';
