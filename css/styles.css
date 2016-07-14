@@ -326,6 +326,87 @@
   margin-top: 10px;
 }
 /* Login Modal */
+/* Order page */
+@media screen and (max-width: 992px) {
+  .loginModal .modal-content {
+    max-width: 90%;
+  }
+  .loginModal .modal-content .textRight {
+    text-align: left;
+  }
+}
+.ordersBlock .orderItem {
+  margin-bottom: 40px;
+}
+.ordersBlock .orderItem .orderHeader {
+  color: #26598c;
+  font: 18px/26px 'GothaProBold';
+  padding: 7px 5px;
+  text-align: center;
+  background: #f6f8fa;
+  border: 1px solid #dddfe1;
+  text-transform: uppercase;
+}
+.ordersBlock .orderItem .orderHeader .numIco {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  margin: 0 10px 0 0;
+  color: #ffffff;
+  background: #26598c;
+}
+.ordersBlock .orderItem .orderBody {
+  border: 1px dashed #dddfe1;
+  border-top: none;
+  padding: 40px;
+}
+.ordersBlock .orderItem .orderBody .orderPart {
+  margin-bottom: 15px;
+  font: 15px/18px 'GothaProReg';
+  color: #33333a;
+  text-align: center;
+}
+.ordersBlock .orderItem .orderBody .orderPart img {
+  display: block;
+  margin: 0 auto 15px;
+  max-width: 100%;
+}
+.ordersBlock .orderItem .orderBody .orderPart span {
+  color: #26598c;
+  font-family: 'GothaProBold';
+  display: inline-block;
+}
+.ordersBlock .orderItem .orderBody .btn {
+  margin-top: 25px;
+}
+.ordersBlock .orderItem .orderBody img {
+  margin-bottom: 20px;
+}
+.ordersBlock .orderItem .orderBody p {
+  color: #26598c;
+  font: 20px/25px 'GothaProReg';
+  text-transform: uppercase;
+}
+.ordersBlock .orderItem .orderBody p strong {
+  font: 25px/25px 'GothaProBold';
+}
+.greenText {
+  color: #21a0a0 !important;
+}
+.btn-primary {
+  background: #26598c;
+  padding: 0 15px;
+}
+.btn-primary:hover {
+  background: #26598c;
+}
+.btn-primary:hover:after {
+  background: #26598c;
+}
+/* Order page */
 @media screen and (max-width: 992px) {
   .registerAcc .accTitle {
     font: 14px/34px 'GothaProMed';
