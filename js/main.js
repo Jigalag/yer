@@ -22,3 +22,8 @@ $('.subLink').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('open').next().slideToggle();
 });
+$('#imagesUpload').enscroll({
+    showOnHover: false,
+    verticalTrackClass: 'track3',
+    verticalHandleClass: 'handle3'
+});
