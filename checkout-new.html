@@ -19,7 +19,7 @@
     <![endif]-->
 </head>
 <header my-header="" class="checkoutHeader">
-    <div class="container">
+    <div class="container noBorder">
         <div class="tableDiv">
             <div class="tableCell">
                 <a href="#/" class="logo"><img class="img-responsive" src="img/logo.png" alt=""></a>
@@ -33,80 +33,188 @@
     </div>
 </header>
 <main class="ng-scope">
+    <div class="thanksLine left fullWidth">
+        <div class="container">
+            George, thank you for ordering from Universal Drugstore.
+        </div>
+    </div>
     <div class="container health-profile-page ng-scope">
+        <div class="simpleCheckoutText">
+            We have started processing your order. Your <strong>order confirmation number is 892301</strong>. We will contact you shortly to confirm order details and payment information.
+        </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="secureTitle left fullWidth">
-                    <img src="img/checkout-ico.png" alt="" title="">
-                    Secure checkout
-                </div>
-                <div class="customerBlock left fullWidth">
-                    <div class="name">John Smith</div>
-                    <div class="marginBottom"><strong>Date of Birth:</strong> October 24, 1975</div>
-                    <div><strong>Default Shipping Address</strong> <a href="">Edit</a><span>|</span><a href="">Create new shipping address</a> </div>
-                    <div>xyz centre street<br>
-                        suite 1044<br>
-                        Detroit, MI<br>
-                        USA 93933
+                <div class="newCheckoutItem left fullWidth  textCenter">
+                    <img src="img/presription.png" alt="" title="" class="payIco">
+                    <div class="payTitle left fullWidth textCenter greenText">Upload Your Prescriptions</div>
+                    <div class="paySubTitle left fullWidth textCenter">You can simply upload the photo of your prescription here</div>
+                    <div class="fileUploader">
+                        <div class="tableDiv">
+                            <div class="tableCell">
+                                <img src="img/upload-ico.png" alt="" title="">
+                                <span>Drag and Drop files here or</span>
+                                <button type="button" class="btn btnGreen">Browse</button>
+                            </div>
+                        </div>
                     </div>
+                    <div class="left fullWidth files textLeft">
+                        <div class="itemFile left fullWidth">
+                            <i class="fa fa-check"></i><strong>Prescription.jpg</strong>
+                        </div>
+                        <div class="itemFile left fullWidth">
+                            <i class="fa fa-close"></i><strong>Prescription.jpg</strong>
+                        </div>
+                        <div class="itemFile left fullWidth">
+                            <i class="fa fa-check"></i><strong>Prescription.jpg</strong>
+                        </div>
+                    </div>
+                    <div class="paySubTitle left fullWidth textCenter">Or you can take a photo using your webcam</div>
+                    <button class="btn btn-success">
+                        <img src="img/camera-ico.png" alt="" title="">
+                        Take a Photo of your Prescription
+                    </button>
                 </div>
-                <button type="button" class="btn btn-danger">Submit My Order</button>
-                <div class="row">
-                    <div class="col-md-8">
-                        <p>Please note that we will contact you for payment after you click on “Submit My Order”</p>
+                <div class="simpleCheckoutText left fullWidth">We can only ship prescription medications once we receive your prescriptions from you or your physician.</div>
+                <div class="payTitle left fullWidth textLeft greenText">You can also send us your prescription in any convient method below.</div>
+                <div class="ordersAccordion authoriseAcc left fullWidth" data-content="accordion">
+                    <div class="accItem left fullWidth">
+                        <div class="accTitle left fullWidth">
+                            <img src="img/upload.png"> Upload my prescription
+                        </div>
+                        <div class="accBlock left fullWidth">
+                            <div class="profileTitle left fullWidth textLeft">
+                                You can simply upload the photo of your prescription here
+                            </div>
+
+                            <div class="fileUploader" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div class="tableDiv">
+                                    <div class="tableCell">
+                                        <img src="img/upload-ico.png" alt="" title="">
+                                        <span>Drag and Drop files here or</span>
+                                        <button type="button" class="btn btnGreen">Browse</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left fullWidth files">
+                                <div class="itemFile left fullWidth">
+                                    <i class="fa fa-check"></i><strong>Prescription.jpg</strong>
+                                </div>
+                                <div class="itemFile left fullWidth">
+                                    <i class="fa fa-close"></i><strong>Prescription.jpg</strong>
+                                </div>
+                                <div class="itemFile left fullWidth">
+                                    <i class="fa fa-check"></i><strong>Prescription.jpg</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accItem left fullWidth">
+                        <div class="accTitle left fullWidth">
+                            <img src="img/med-ico.png"> Call my doctor
+                        </div>
+                        <div class="accBlock left fullWidth">
+                            <div class="profileTitle left fullWidth textLeft">
+                                Want us to call your doctor for your prescriptions, free of charge?
+                            </div>
+                            <div class="profileGreenTitle left fullWidth textLeft">
+                                This service is 100% free and is the fastest way to get us your prescriptions.
+                            </div>
+                            <form>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" placeholder="Dr. First Name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" placeholder="Dr. Last Name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" placeholder="Dr. Phone">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" placeholder="Dr. Fax">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-success">Upload Prescription</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="accItem left fullWidth">
+                        <div class="accTitle left fullWidth">
+                            <img src="img/msg-ico.png"> Send by email
+                        </div>
+                        <div class="accBlock left fullWidth">
+                            <div class="profileTitle left fullWidth textLeft">
+                                Email prescriptions to <a href="mailto:prescriptions@universaldrugstore.com">prescriptions@universaldrugstore.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accItem left fullWidth">
+                        <div class="accTitle left fullWidth">
+                            <img src="img/fax-ico.png"> Send by fax
+                        </div>
+                        <div class="accBlock left fullWidth">
+                            <div class="profileTitle left fullWidth textLeft">
+                                Fax your prescription(s) to our <a href="tel:1-866-783-4223">Toll Free Fax number 1-866-783-4223</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accItem left fullWidth">
+                        <div class="accTitle left fullWidth">
+                            <img src="img/mail-ico.png"> Send by mail
+                        </div>
+                        <div class="accBlock left fullWidth">
+                            <div class="profileTitle left fullWidth textLeft">
+                                Send your prescription(s) to our mailbox
+                                <div class="left fullWidth">
+                                    <a href="">
+                                        Universal Drugstore<br>4936 Yonge St - Suite 835<br>Toronto, Ontario<br>M2N 6S3 Canada
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="left fullWidth payTableTitle textCenter checkoutPay">
-                    Order Information
-                </div>
-                <div class="left fullWidth payTable">
-                    <div class="tableDiv">
-                        <div class="tableRow">
-                            <div class="tableCell textLeft">
-                                <strong>Plavix (Clopidogrel) - 75mg 56 tablets</strong>
-                                Manufactured by Sanofi.
-                                Product of United Kingdom
-                                Shipped from United Kingdom
-                            </div>
-                            <div class="tableCell textLeft">
-
-                            </div>
-                            <div class="tableCell textLeft">
-                                <strong>$136.00 USD</strong>
-                            </div>
-                        </div>
-                        <div class="tableRow">
-                            <div class="tableCell textLeft">
-                                <strong>Plavix (Clopidogrel) - 75mg 56 tablets</strong>
-                                Manufactured by Sanofi.
-                                Product of United Kingdom
-                                Shipped from United Kingdom
-                            </div>
-                            <div class="tableCell textLeft">
-
-                            </div>
-                            <div class="tableCell textLeft">
-                                <strong>$136.00 USD</strong>
-                            </div>
-                        </div>
-                        <div class="tableRow">
-                            <div class="tableCell textLeft">
-
-                            </div>
-                            <div class="tableCell textLeft">
-                                <strong>Subtotal:</strong>
-                                <strong>Shipping:</strong>
-                                <strong>Total:</strong>
-                            </div>
-                            <div class="tableCell textLeft">
-                                <strong>$136.00 USD</strong>
-                                <strong><span>Free</span></strong>
-                                <strong>$136.00 USD</strong>
+                <div class="newCheckoutItem left fullWidth textCenter">
+                    <img src="img/pay-ico.png" alt="" title="" class="payIco">
+                    <div class="payTitle left fullWidth textCenter">Pay by Check</div>
+                    <div class="paySubTitle left fullWidth textCenter">Simply upload a photo of your check to pay for your order. No Mailing Required!</div>
+                    <div class="fileUploader">
+                        <div class="tableDiv">
+                            <div class="tableCell">
+                                <img src="img/upload-ico.png" alt="" title="">
+                                <span>Drag and Drop files here or</span>
+                                <button type="button" class="btn btnGreen">Browse</button>
                             </div>
                         </div>
                     </div>
+                    <div class="left fullWidth files  textCenter">
+                        <div class="itemFile left fullWidth">
+                            <i class="fa fa-check"></i><strong>Prescription.jpg</strong>
+                        </div>
+                        <div class="itemFile left fullWidth">
+                            <i class="fa fa-close"></i><strong>Prescription.jpg</strong>
+                        </div>
+                        <div class="itemFile left fullWidth">
+                            <i class="fa fa-check"></i><strong>Prescription.jpg</strong>
+                        </div>
+                    </div>
+                    <div class="paySubTitle left fullWidth textCenter">Or you can take a photo using your webcam</div>
+                    <button class="btn btn-primary">
+                        <img src="img/camera-ico.png" alt="" title="">
+                        Take a Photo of my Check
+                    </button>
                 </div>
             </div>
         </div>

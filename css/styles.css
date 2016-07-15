@@ -560,6 +560,57 @@
 .customerBlock + .btn {
   margin-bottom: 10px;
 }
+.newCheckoutItem {
+  padding: 15px;
+  border: 1px dashed #dddddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.newCheckoutItem img {
+  height: 44px;
+}
+.newCheckoutItem .paySubTitle {
+  min-height: 32px;
+}
+.newCheckoutItem .btn {
+  padding: 0 45px;
+  position: relative;
+}
+.newCheckoutItem .btn img {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  height: auto;
+}
+.simpleCheckoutText {
+  font: 14px/14px 'GothaProReg';
+  color: #323232;
+  margin: 35px 0 25px;
+}
+.thanksLine {
+  background: #f2f5f7;
+  padding: 15px;
+  font: 19px/19px 'GothaProBold';
+  color: #21a0a0;
+  text-align: center;
+}
+.noBorder {
+  border: none !important;
+}
+@media screen and (max-width: 992px) {
+  .newCheckoutItem .btn {
+    position: relative;
+    height: auto;
+    line-height: 18px;
+    padding: 15px 45px;
+    white-space: normal;
+  }
+}
 /* Checkout page */
 @media screen and (max-width: 992px) {
   .registerAcc .accTitle {
