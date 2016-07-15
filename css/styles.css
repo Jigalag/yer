@@ -407,6 +407,66 @@
   background: #26598c;
 }
 /* Order page */
+/* Pay page */
+.payTitle {
+  color: #26598c;
+  font: 20px/20px 'GothaProMed';
+  margin-bottom: 15px;
+}
+.paySubTitle {
+  color: #323232;
+  font: 16px/16px 'GothaProMed';
+  margin-bottom: 15px;
+}
+.payIco {
+  display: block;
+  margin: 0 auto 25px;
+}
+.payTableTitle {
+  background: #f6f8fa;
+  border: 1px solid #dddfe1;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  margin-top: 50px;
+  font: 16px/16px 'GothaProBold';
+  color: #26598c;
+  padding: 12px 5px 8px;
+  text-transform: uppercase;
+}
+.payTable {
+  border: 1px solid #dddfe1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border-top: none;
+  padding: 15px;
+  font: 11px/15px 'GothaProReg';
+  color: #040404;
+}
+.payTable strong {
+  font-size: 14px;
+  font-family: 'GothaProMed';
+  font-weight: normal;
+  margin-bottom: 15px;
+  display: block;
+}
+.payTable .tableCell {
+  vertical-align: top;
+  padding: 20px 0;
+  border-top: 1px solid #dddfe1;
+}
+.payTable .tableCell:nth-child(1) {
+  width: 60%;
+}
+.payTable .tableCell:nth-child(2),
+.payTable .tableCell:nth-child(3) {
+  width: 20%;
+}
+.payTable .tableRow:first-child .tableCell {
+  border-top: none;
+}
+/* Pay page */
 @media screen and (max-width: 992px) {
   .registerAcc .accTitle {
     font: 14px/34px 'GothaProMed';
