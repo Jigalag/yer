@@ -1,0 +1,15 @@
+.resetForm {
+  margin-top: 50px;
+  float: left;
+  width: 100%;
+}
+.forgetBtn {
+  margin-top: 50px;
+}
+.backLink {
+  margin-top: 15px;
+}
+.backLink a {
+  text-decoration: underline;
+  font-family: 'GothaProReg';
+}
