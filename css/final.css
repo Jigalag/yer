@@ -87,3 +87,38 @@
   }
 }
 /* Subscribe page */
+/* 404 page */
+.notFoundPage {
+  padding: 160px 0;
+}
+.notFoundTitle {
+  font: 200px/200px 'GothaProMed';
+  color: #21a0a0;
+  text-align: center;
+}
+.notFoundSubTitle {
+  font: 29px/29px 'GothaProMed';
+  color: #323232;
+  text-align: center;
+  text-transform: uppercase;
+}
+.notFoundSubSubTitle {
+  font: 22px/22px 'GothaProReg';
+  color: #323232;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .notFoundPage {
+    padding: 60px 0;
+  }
+  .notFoundTitle {
+    font: 40px/40px 'GothaProMed';
+  }
+  .notFoundSubTitle {
+    font: 20px/20px 'GothaProMed';
+  }
+  .notFoundSubSubTitle {
+    font: 16px/16px 'GothaProReg';
+  }
+}
+/* 404 page */
