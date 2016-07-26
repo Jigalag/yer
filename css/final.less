@@ -130,3 +130,111 @@
   }
 }
 /* 404 page */
+
+
+
+/* modal pages */
+.advModal{
+  display: flex !important;
+  .modal-dialog{
+    margin: auto;
+    width: 400px;
+  }
+  &.freeModal{
+    .modal-header{
+      background: #0b87c9;
+      text-align: center;
+      font: 16px/50px 'GothaProMed';
+      color: #ffffff;
+    }
+    .modal-body{
+      background: #ffffff;
+    }
+    .modal-footer{
+      padding-top: 0;
+      border: none;
+    }
+    .freeBlock{
+      background: url("../img/free-image.png") no-repeat center center;
+      -webkit-background-size: 100% 100% ;
+      background-size: 100% 100% ;
+      width: 94%;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 35px 0;
+    }
+    .freeContent{
+      .freeText{
+        color: #0b87c9;
+        font: 33px/34px 'GothaProBold';
+        text-transform: uppercase;
+      }
+    }
+  }
+  &.saveModal{
+    .modal-header{
+      background: #d0465e;
+      text-align: center;
+      height: auto;
+      padding: 5px 0;
+      font: 16px/20px 'GothaProMed';
+      color: #ffffff;
+      border: none;
+    }
+    .modal-body{
+      background: #e64b66;
+      border: none;
+    }
+    .saveBlock{
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      position: relative;
+      .saveContent{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        span{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          text-align: center;
+          font: 33px/30px 'GothaProBold';
+          text-transform: uppercase;
+          color: #ffffff;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .orderText{
+      border-top: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      width: 80%;
+      margin: 20px auto 10px;
+      font: 24px/26px 'GothaProBold';
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 6px 0;
+      div{
+        font: 19px/19px 'GothaProBold';
+      }
+    }
+  }
+  .modalLinkSimple{
+    font: 13px/13px 'GothaProReg';
+    color: #959595;
+    margin-top: 6px;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+  }
+}
