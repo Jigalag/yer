@@ -1,0 +1,391 @@
+<!doctype html>
+<html ng-app="udsgulp" class="ng-scope">
+<head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/j-style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/final.css">
+
+    <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+</head>
+<header my-header="">
+    <div class="top">
+        <div class="container">
+            <div class="call-block">
+                Call Toll Free <a href="callto:+18664562456"><img src="img/call-icn.png" width="17" height="17" alt="">1-866-456-2456</a>
+            </div>
+            <div class="free-shipping">
+                <b>free shipping</b> on all orders over $100
+            </div>
+            <div class="user-btns">
+                <a href="#"><img src="img/login-icn.png" alt="">Sign in</a>
+                <a href="#"><img src="img/reg-icn.png" alt="">Register</a>
+            </div>
+            <div class="mobile-top-nav">
+                <a href="#" class="login-btn"></a>
+                <a href="#" class="cart-btn"></a>
+                <a href="#" class="nav-btn"></a>
+            </div>
+        </div>
+    </div>
+    <ul class="login-nav">
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Register</a></li>
+    </ul>
+    <div class="container">
+        <a href="#/" class="logo"><img class="img-responsive" src="img/logo.png" alt=""></a>
+        <form method="get" action="" class="header-search ng-pristine ng-valid">
+            <input type="search" name="q" ng-model="search" placeholder="Find Your Medications (eg. Plavix, Viagra, Lipitor, etc.)" class="ng-pristine ng-untouched ng-valid" aria-invalid="false">
+            <button type="submit"></button>
+        </form>
+        <a href="#" class="header-cart ng-scope ng-binding" ng-controller="headerCartCtrl">
+            <span>shopping cart</span>
+            533 items- <b class="ng-binding">$1139 USD</b>
+        </a>
+    </div>
+    <nav class="header-nav">
+        <div class="container">
+            <a href="#/" class="active">Home</a>
+            <a href="/#orderonline">Place a new order</a>
+            <a href="#">Refill order</a>
+            <a href="#">How to order</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact us</a>
+        </div>
+    </nav>
+</header>
+<main class="ng-scope">
+    <div class="petMainBlock">
+        <div class="container ng-scope">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="petTitle">Save on our full line of pet meds</div>
+                </div>
+                <div class="col-md-7">
+                    <img src="img/pet-image.png" alt="" title="">
+                </div>
+                <div class="petSearch col-md-12">
+                    <form method="get" action="" class="header-search ng-pristine ng-valid">
+                        <img src="img/search-image.png">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container health-profile-page ng-scope">
+        <div class="letterFilter">
+            <a href="" class="item">a</a>
+            <a href="" class="item">b</a>
+            <a href="" class="item">c</a>
+            <a href="" class="item">d</a>
+            <a href="" class="item">e</a>
+            <a href="" class="item">f</a>
+            <a href="" class="item">g</a>
+            <a href="" class="item">h</a>
+            <a href="" class="item">i</a>
+            <a href="" class="item">j</a>
+            <a href="" class="item">k</a>
+            <a href="" class="item">l</a>
+            <a href="" class="item">m</a>
+            <a href="" class="item">n</a>
+            <a href="" class="item">o</a>
+            <a href="" class="item">p</a>
+            <a href="" class="item">q</a>
+            <a href="" class="item">r</a>
+            <a href="" class="item">s</a>
+            <a href="" class="item">t</a>
+            <a href="" class="item">u</a>
+            <a href="" class="item">v</a>
+            <a href="" class="item">w</a>
+            <a href="" class="item">x</a>
+            <a href="" class="item">y</a>
+            <a href="" class="item">z</a>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="ordersBlock petBlock left fullWidth">
+                    <div class="orderItem left fullWidth">
+                        <div class="orderHeader left fullWidth">
+                            top searches
+                        </div>
+                        <div class="orderBody left fullWidth textCenter">
+                            <div class="petItemSearch">
+                                <div class="titleSearch">
+                                    <span>Florinef 0.1mg</span>
+                                </div>
+                                <hr class="customHR">
+                                <div class="contentSearch">
+                                    <div>300 tablets <strong>-</strong> <strong>$147.00 USD</strong></div>
+                                </div>
+                            </div>
+                            <div class="petItemSearch">
+                                <div class="titleSearch">
+                                    <span>Florinef 0.1mg</span>
+                                </div>
+                                <hr class="customHR">
+                                <div class="contentSearch">
+                                    <div>300 tablets <strong>-</strong> <strong>$147.00 USD</strong></div>
+                                </div>
+                            </div>
+                            <div class="petItemSearch">
+                                <div class="titleSearch">
+                                    <span>Florinef 0.1mg</span>
+                                </div>
+                                <hr class="customHR">
+                                <div class="contentSearch">
+                                    <div>300 tablets <strong>-</strong> <strong>$147.00 USD</strong></div>
+                                </div>
+                            </div>
+                            <div class="petItemSearch">
+                                <div class="titleSearch">
+                                    <span>Florinef 0.1mg</span>
+                                </div>
+                                <hr class="customHR">
+                                <div class="contentSearch">
+                                    <div>300 tablets <strong>-</strong> <strong>$147.00 USD</strong></div>
+                                </div>
+                            </div>
+                            <div class="petItemSearch">
+                                <div class="titleSearch">
+                                    <span>Florinef 0.1mg</span>
+                                </div>
+                                <hr class="customHR">
+                                <div class="contentSearch">
+                                    <div>300 tablets <strong>-</strong> <strong>$147.00 USD</strong></div>
+                                </div>
+                            </div>
+                            <div class="petItemSearch">
+                                <div class="titleSearch">
+                                    <span>Florinef 0.1mg</span>
+                                </div>
+                                <hr class="customHR">
+                                <div class="contentSearch">
+                                    <div>300 tablets <strong>-</strong> <strong>$147.00 USD</strong></div>
+                                </div>
+                            </div>
+                            <div class="petItemSearch">
+                                <div class="titleSearch">
+                                    <span>Florinef 0.1mg</span>
+                                </div>
+                                <hr class="customHR">
+                                <div class="contentSearch">
+                                    <div>300 tablets <strong>-</strong> <strong>$147.00 USD</strong></div>
+                                </div>
+                            </div>
+                            <div class="petItemSearch">
+                                <div class="titleSearch">
+                                    <span>Florinef 0.1mg</span>
+                                </div>
+                                <hr class="customHR">
+                                <div class="contentSearch">
+                                    <div>300 tablets <strong>-</strong> <strong>$147.00 USD</strong></div>
+                                </div>
+                            </div>
+                            <div class="petItemSearch">
+                                <div class="titleSearch">
+                                    <span>Florinef 0.1mg</span>
+                                </div>
+                                <hr class="customHR">
+                                <div class="contentSearch">
+                                    <div>300 tablets <strong>-</strong> <strong>$147.00 USD</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="promoBlock">
+                    <div class="promoHeader">
+                        <img src="img/p1.png">
+                    </div>
+                    <div class="promoContent blueBG">
+                        <div class="row">
+                            <div class="col-md-6">
+                                Buy Heartgard at the Cheapest Price Possible!
+                                <a href="">More Info</a>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/pr1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promoBlock">
+                    <div class="promoHeader">
+                        <img src="img/p2.png">
+                    </div>
+                    <div class="promoContent greenBG">
+                        <div class="row">
+                            <div class="col-md-6">
+                                Find the Cheapest Price for Frontline Plus!
+                                <a href="">More Info</a>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/pr1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="ordersBlock petBlock left fullWidth">
+                    <div class="orderItem left fullWidth">
+                        <div class="orderHeader left fullWidth">
+                            Pet Medications Directory
+                        </div>
+                        <div class="orderBody left fullWidth textCenter">
+                            <div class="ordersAccordion orderTable left fullWidth" data-content="accordion">
+                                <div class="accItem left fullWidth">
+                                    <div class="accTitle left fullWidth active">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left">
+                                                <strong>Cat</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accBlock left fullWidth" style="display: block;">
+                                        <ul class="text-left">
+                                            <li><a href="">Advantage 18 Large Cat - Cats over 4kg</a></li>
+                                            <li><a href="">Advantage 9 Small Cat (Orange) - Cats under 9 lbs</a></li>
+                                            <li><a href="">Advantage II Large Cat - Cats over 4kg</a></li>
+                                            <li><a href="">Advantage Multi 18 (Purple) - Cats over 9 lbs</a></li>
+                                            <li><a href="">Advantage Multi 9 (Orange) - Cats under 9 lbs</a></li>
+                                            <li><a href="">AeroKat Feline Aerosol Chamber</a></li>
+                                            <li><a href="">Drontal for Cats</a></li>
+                                            <li><a href="">Felimazole</a></li>
+                                            <li><a href="">Feliway Refill</a></li>
+                                            <li><a href="">Feliway Diffuser</a></li>
+                                            <li><a href="">Frontline Top Spot For Cats</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accItem left fullWidth">
+                                    <div class="accTitle left fullWidth ">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left">
+                                                <strong>Cat</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accBlock left fullWidth">
+                                        <ul class="text-left">
+                                            <li><a href="">Advantage 18 Large Cat - Cats over 4kg</a></li>
+                                            <li><a href="">Advantage 9 Small Cat (Orange) - Cats under 9 lbs</a></li>
+                                            <li><a href="">Advantage II Large Cat - Cats over 4kg</a></li>
+                                            <li><a href="">Advantage Multi 18 (Purple) - Cats over 9 lbs</a></li>
+                                            <li><a href="">Advantage Multi 9 (Orange) - Cats under 9 lbs</a></li>
+                                            <li><a href="">AeroKat Feline Aerosol Chamber</a></li>
+                                            <li><a href="">Drontal for Cats</a></li>
+                                            <li><a href="">Felimazole</a></li>
+                                            <li><a href="">Feliway Refill</a></li>
+                                            <li><a href="">Feliway Diffuser</a></li>
+                                            <li><a href="">Frontline Top Spot For Cats</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accItem left fullWidth">
+                                    <div class="accTitle left fullWidth ">
+                                        <div class="tableDiv">
+                                            <div class="tableCell text-left">
+                                                <strong>Cat</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accBlock left fullWidth">
+                                        <ul class="text-left">
+                                            <li><a href="">Advantage 18 Large Cat - Cats over 4kg</a></li>
+                                            <li><a href="">Advantage 9 Small Cat (Orange) - Cats under 9 lbs</a></li>
+                                            <li><a href="">Advantage II Large Cat - Cats over 4kg</a></li>
+                                            <li><a href="">Advantage Multi 18 (Purple) - Cats over 9 lbs</a></li>
+                                            <li><a href="">Advantage Multi 9 (Orange) - Cats under 9 lbs</a></li>
+                                            <li><a href="">AeroKat Feline Aerosol Chamber</a></li>
+                                            <li><a href="">Drontal for Cats</a></li>
+                                            <li><a href="">Felimazole</a></li>
+                                            <li><a href="">Feliway Refill</a></li>
+                                            <li><a href="">Feliway Diffuser</a></li>
+                                            <li><a href="">Frontline Top Spot For Cats</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer my-footer=""><div class="container">
+    <div class="row footer-contacts">
+        <div class="col-md-4">
+            <b>contact us</b>
+            <p>
+                Toll Free Phone: 1-866-456-2456 <br>
+                Toll Free Fax: 1-866-783-4223 <br>
+                International Phone: 001-204-255-9911 <br>
+                International Fax: 001-204-256-3802
+            </p>
+        </div>
+        <div class="col-md-4">
+            <b>HOURS OF OPERATION</b>
+            <p>
+                Monday to Friday - 7:00 am to Midnight (CST)<br>
+                Saturday - 8:00 am to 6:00 pm (CST)<br>
+                Sunday - 9:30 am to 6:00 pm (CST)
+            </p>
+        </div>
+        <div class="col-md-4">
+            <b>MAILING ADDRESS</b>
+            <p>
+                207 Regent Street, 3rd Floor<br>
+                London, United Kingdom<br>
+                W1B 3HH<br>
+                * Returns are not accepted at this address.
+            </p>
+        </div>
+    </div>
+    <nav class="footer-nav clearfix">
+        <ul>
+            <li><a href="#">Place A New Order</a></li>
+            <li><a href="#">Refill Your Order</a></li>
+            <li><a href="#">How To Order</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</div>
+    <div class="copy">
+        <div class="container">
+            <img src="img/logo-footer.png" class="logo-footer" alt="">
+            <p>
+                Copyright ©2002-2016 universaldrugstore.com "Universal Drugstore™" and "universaldrugstore.com"
+                are registered trademarks of "Universal Drugstore ™" All rights reserved.
+                All trademarks and registered trademarks are the property of their respective owners.
+            </p>
+            <ul class="soc-btn">
+                <li><a href="#" class="fb"></a></li>
+                <li><a href="#" class="tw"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
